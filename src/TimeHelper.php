@@ -364,5 +364,18 @@ class TimeHelper
 
         return $businessDays;
     }
+    /**
+     * Get an approximation of CLOCKS_PER_SEC.
+     *
+     * This function returns a value representing the number of microseconds in one second.
+     * In other words, it returns 1,000,000 microseconds per second.
+     *
+     * @return int Number of microseconds per second (1,000,000).
+     */
+    public function getClocksPerSec(): int
+    {
+        return 1000000; // Microseconds per second
+    }
+
 
 }
