@@ -386,4 +386,15 @@ class TimeHelper
     return $randomNumber;
 }
 
+public function roll_dice(): int
+{
+    return rand(1, 6);
+}
+    
+public function generateRandomNumberInRange(int $min, int $max): int
+{
+    return rand($min, $max);
+}
+
+
 }
