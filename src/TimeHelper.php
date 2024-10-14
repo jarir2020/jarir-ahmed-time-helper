@@ -376,6 +376,14 @@ class TimeHelper
     {
         return 1000000; // Microseconds per second
     }
+    public function generateRandomNumber(int $length = 10): string
+{
+    $randomNumber = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomNumber .= mt_rand(0, 9);
+    }
 
+    return $randomNumber;
+}
 
 }
